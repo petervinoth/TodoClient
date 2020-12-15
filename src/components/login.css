@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ddd{
+  
+   
+    display:grid;
+    place-items:center;
+height:89vh;
+   
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.logo{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

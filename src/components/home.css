@@ -1,0 +1,32 @@
+
+
+
+.home{ 
+   text-align: left;
+    background-image: url("https://images.pexels.com/photos/1250260/pexels-photo-1250260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 88vh;
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+ } 
+ .glogo{
+    border-radius: 50%;
+    width: 400px;
+    height: 460px;
+    display: block;
+    float:right;
+    margin-left:100px;
+   
+
+ }
+ .type{
+    text-align: left;
+    
+ }
+ .info{
+     text-align: left;
+     color:black;
+     font-weight: 500;
+ }
