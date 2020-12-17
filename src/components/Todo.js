@@ -20,7 +20,7 @@ export const Todo=()=>{
 
     const Data={title};
 
-const dats=await Axios.post(`http://localhost:5000/todo/${userid}/add`,Data);
+const dats=await Axios.post(`http://todovinoth.herokuapp.com/todo/${userid}/add`,Data);
 
  
 //setMessage("submit Successfully ");
