@@ -23,7 +23,7 @@ export const Edit=()=>{
         const getArticle=async()=>{
           
     
-          const response = await get(`http://localhost:5000/todo/gettitle/${upids}`);
+          const response = await get(`http://todovinoth.herokuapp.com/todo/gettitle/${upids}`);
           //const fina=await response.json()
          
           setArticle(response.data);
@@ -37,7 +37,7 @@ export const Edit=()=>{
             async function updateArticle() {
             //  console.log(article);
               try {
-              const details=  await patch(`http://localhost:5000/todo/update/${upids}`, article);
+              const details=  await patch(`http://todovinoth.herokuapp.com/todo/update/${upids}`, article);
               
               console.log(details);
               history.push('/list');
