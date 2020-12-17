@@ -20,7 +20,7 @@ export const TodoList=()=>{
     }, []);
     
     const getRecipe=async()=>{
-        const list = await fetch(`http://localhost:5000/todo/${userid}/todos`)
+        const list = await fetch(`http://todovinoth.herokuapp.com/todo/${userid}/todos`)
         const ans=await list.json()
         
        setResults(ans.data);
@@ -30,7 +30,7 @@ export const TodoList=()=>{
 
     const updatetitle=async(_id)=>{
       setUpids(_id);
-      const getdata=await fetch(`http://localhost:5000/todo/gettitle/${_id}`)
+      const getdata=await fetch(`http://todovinoth.herokuapp.com/todo/gettitle/${_id}`)
       const datas=await getdata.json()
       setUpdata(datas);
       history.push('/update');
@@ -42,7 +42,7 @@ export const TodoList=()=>{
 
     const deletedata=async(_id)=>{
       try {
-         const info= await axios.delete(`http://localhost:5000/todo/delete/${_id}`); 
+         const info= await axios.delete(`http://todovinoth.herokuapp.com/todo/delete/${_id}`); 
         // const infos=await info.json()
         history.push('/todo');
 
