@@ -20,7 +20,7 @@ export const Signup=()=>{
 
         const newuser={fullName,email,password};
 
-   const users=await Axios.post("http://localhost:5000/api/register",newuser);
+   const users=await Axios.post("http://todovinoth.herokuapp.com/api/register",newuser);
   setMessage("Register Successfully ");
     //console.log(users);
 
